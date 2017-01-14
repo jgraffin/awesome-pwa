@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@import '../_partials/colors';
+
+@keyframes slideShowNavigation {
+  from {
+    top: 90px;
+    opacity: 0;
+    transform: scale(1);
+  }
+  to {
+    top: -180px;
+    opacity: 1;
+    transform: scale(1.20, 1.20);
+  }
+}
+
+@keyframes slideHideNavigation {
+  from {
+    top: -180px;
+    opacity: 1;
+    transform: scale(1.20, 1.20);
+  }
+  to {
+    top: 90px;
+    opacity: 0;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes buttonHide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes buttonShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes buttonRotateBefore {
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+    margin-top: 0px;
+  }
+  to {
+    transform: rotate(45deg);
+    opacity: 1;
+    margin-top: 10px;
+  }
+}
+
+@keyframes buttonRotateAfter {
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+    margin-top: 10px;
+  }
+  to {
+    transform: rotate(-45deg);
+    opacity: 1;
+    margin-top: -10px;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.20);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.20);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes hideRouteSubMenu {
+    from {
+      opacity: 1;
+      transform: scale(1.20);
+    }
+    to {
+      opacity: 0;
+      transform: scale(1);
+    }
+}
+
+@keyframes showRouteSubMenu {
+    from {
+      opacity: 0;
+      transform: scale(1);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1.20);
+    }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    height: 0;
+    transform: translateY(-38px);
+  }
+  to {
+    opacity: 1;
+    height: auto;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    height: auto;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    height: 0;
+    transform: translateY(-38px);
+  }
+}
+
+
+@keyframes rotateDown {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateUp {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
